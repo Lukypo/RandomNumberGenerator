@@ -1,6 +1,14 @@
 let numbers = [];
 let exclusions = [];
 
+const minInput = document.getElementById('min');
+const maxInput = document.getElementById('max');
+const generateButton = document.getElementById('generateButton');
+
+// Disable the generate button whenever the min or max value changes
+minInput.addEventListener('input', () => generateButton.disabled = true);
+maxInput.addEventListener('input', () => generateButton.disabled = true);
+
 function createExclusionButtons() {
   const min = getNumberFromElement('min');
   const max = getNumberFromElement('max');
@@ -17,9 +25,14 @@ function createExclusionButtons() {
     return;
   }
 
+  numbers = [];
+  exclusions = [];
+
   for (let i = min; i <= max; i++) {
     createButton(i, exclusionButtons);
   }
+
+  generateButton.disabled = false;
 }
 
 function createButton(i, exclusionButtons) {
@@ -66,7 +79,19 @@ function generateRandomNumber() {
     return;
   }
 
-  const generateButton = document.getElementById('generateButton');
+  const min = getNumberFromElement('min');
+  const max = getNumberFromElement('max');
+
+  if (isNaN(min) || isNaN(max)) {
+    alert('Please enter a range of numbers');
+    return;
+  }
+
+  if (min > max) {
+    alert('The minimum number must be less than the maximum number');
+    return;
+  }
+
   generateButton.disabled = true;
 
   const maxIterations = 10;

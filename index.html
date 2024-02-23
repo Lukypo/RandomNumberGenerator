@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Number Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="controls">
+        <h1>Random Number Generator</h1>
+        <div class="input-group">
+          <label for="min">Minimum Number:</label>
+          <input type="number" id="min" name="min" required />
+        </div>
+        <div class="input-group">
+          <label for="max">Maximum Number:</label>
+          <input type="number" id="max" name="max" required />
+        </div>
+        <div class="input-group">
+            <label for="exclude">Exclude generated numbers:</label>
+            <input type="checkbox" id="exclude" name="exclude" style="transform: scale(1.5);" />
+          </div>
+        <button class="confirmButton" onclick="createExclusionButtons()">
+          Confirm Range
+        </button>
+        <h1 class="outputText" id="randomNumber">0</h1>
+        <button id="generateButton" class="generateButton" onclick="generateRandomNumber()">
+          Generate
+        </button>
+      </div>
+      <div class="exclusionButtons" id="exclusionButtons"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

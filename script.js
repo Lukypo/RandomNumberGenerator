@@ -35,6 +35,15 @@ function createExclusionButtons() {
   generateButton.disabled = false;
 }
 
+function excludeAll() {
+  for (let i = 0; i < numbers.length; i++) {
+    const number = parseInt(numbers[i]);
+    const button = document.getElementById(number);
+    addExclusionOnly(number, button);
+  }
+  numbers = [];
+}
+
 function createButton(i, exclusionButtons) {
   const button = document.createElement('button');
   button.classList.add('numberButton');
@@ -65,9 +74,18 @@ function removeExclusion(number, button) {
   }
 }
 
+function addExclusionOnly(number, button) {
+  exclusions.push(number);
+  button.classList.add('excluded');
+}
+
 function addExclusion(number, button) {
   exclusions.push(number);
   button.classList.add('excluded');
+  removeNumber(number);
+}
+
+function removeNumber(number) {
   if (numbers.includes(number)) {
     numbers.splice(numbers.indexOf(number), 1);
   }

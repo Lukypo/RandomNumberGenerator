@@ -75,6 +75,14 @@ body {
     margin-right: 10px;
   }
 
+  .excludeAllButton{
+    padding: 5px 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    display: inline-block;
+  }
+
   .numberButton{
     padding: 5px 10px;
     margin-top: 3px;

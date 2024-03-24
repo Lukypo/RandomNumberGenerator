@@ -11,8 +11,6 @@ const rightCatImage = document.getElementById("rightKitten");
 minInput.addEventListener('input', () => generateButton.disabled = true);
 maxInput.addEventListener('input', () => generateButton.disabled = true);
 
-
-
 function createExclusionButtons() {
   const min = getNumberFromElement('min');
   const max = getNumberFromElement('max');
@@ -139,25 +137,29 @@ function generateRandomNumber() {
 
 function displayRandomKitten() {
   const kittenImages = [
-    'https://th.bing.com/th/id/OIP.gwmMot1o-z5maenRor2kqQHaE8?rs=1&pid=ImgDetMain',
-    'https://ld-wp.template-help.com/wordpress_62483/wp-content/uploads/2017/02/image30-400x459.jpg',
-    'https://th.bing.com/th/id/OIP.AW8VfeeCp9v_xzlVdciPpAHaEo?rs=1&pid=ImgDetMain',
-    'https://3.bp.blogspot.com/-k3zfP_GuUnY/VW4OZIHKgNI/AAAAAAAAEQk/LskSOW5D2W4/s1600/cute-kittens-12929201-1600-1200.jpg',
-    'https://media.tenor.com/lCKwsD2OW1kAAAAi/happy-cat-happy-happy-cat.gif',
-    'https://th.bing.com/th/id/R.1393dac138361f9e182131254ca3719f?rik=e54GwObHLjPLKA&riu=http%3a%2f%2f1.bp.blogspot.com%2f-kRnZimNNJsA%2fUBlEl68mn0I%2fAAAAAAAARns%2fyCBKphe6nG4%2fs1600%2ffunny-cat-pictures-009-001.jpg&ehk=sQrf%2fI%2biNfvz%2f2bEvEeWEKJVW33eW7APCvwilqEZ3UI%3d&risl=&pid=ImgRaw&r=0',
-    'https://www.hdwallpaper.nu/wp-content/uploads/2015/02/maxresdefault.jpg',
-    'https://2.bp.blogspot.com/-dSdK7Tpw-AE/U4mYLuFw3-I/AAAAAAAAuWQ/05udTQsPUQ4/s1600/funny-cat-images1-www.go4pix.info.jpg',
-    'https://worldcatcomedy.com/wp-content/uploads/2018/09/maxresdefault-46.jpg',
-    'https://gifdb.com/images/high/sad-white-cat-memes-crying-tears-huhuhu-pbhoq9jxfvgd2bbi.gif',
-    'https://c.tenor.com/7t63GFnoIPUAAAAd/tenor.gif',
-    'https://media.tenor.com/0fjDdOOwkXMAAAAd/cat-shocked.gif',
-    'https://c.tenor.com/f7sCJzIXNGcAAAAd/tenor.gif',
-    'https://c.tenor.com/czX4SKtwCVUAAAAd/tenor.gif',
-    'https://i.cbc.ca/1.5359228.1577206958!/fileImage/httpImage/smudge-the-viral-cat.jpg',
-    'https://i.kym-cdn.com/entries/icons/original/000/026/638/cat.jpg',
-    'https://uploads.dailydot.com/2023/12/crying-cat-meme.jpg?q=65&auto=format&w=1600&ar=2:1&fit=crop',
-    'https://imgflip.com/s/meme/Smiling-Cat.jpg',
-    'https://media.tenor.com/_1hMqyFC4LEAAAAM/pop-cat.gif',
+    'https://lukypocats.imgix.net/Img/cat0.jpg',
+    'https://lukypocats.imgix.net/Img/cat1.png',
+    'https://lukypocats.imgix.net/Img/cat2.jpg',
+    'Img/cat3.gif',
+    'https://lukypocats.imgix.net/Img/cat4.png',
+    'https://lukypocats.imgix.net/Img/cat5.jpg',
+    'https://lukypocats.imgix.net/Img/cat6.jpg',
+    'https://lukypocats.imgix.net/Img/cat7.png',
+    'https://lukypocats.imgix.net/Img/cat8.jpg',
+    'Img/cat9.gif',
+    'Img/cat10.gif',
+    'Img/cat11.gif',
+    'Img/cat12.gif',
+    'Img/cat13.gif',
+    'https://lukypocats.imgix.net/Img/cat14.avif',
+    'https://lukypocats.imgix.net/Img/cat15.jpg',
+    'https://lukypocats.imgix.net/Img/cat16.jpg',
+    'https://lukypocats.imgix.net/Img/cat17.jpg',
+    
+    'Img/cat18.gif',
+    //tmp pahts
+    'Img/cat19.jpg',
+    'Img/cat20.jpg',
   ];
 
   const leftKitten = kittenImages[Math.floor(Math.random() * kittenImages.length)];

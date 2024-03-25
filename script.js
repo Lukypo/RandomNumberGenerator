@@ -118,7 +118,7 @@ function generateRandomNumber() {
   const excludeCheckbox = document.getElementById('exclude');
   let counter = 0;
   const rngElement = document.getElementById('randomNumber');
-
+  displayRandomKitten();
   const intervalId = setInterval(() => {
     const randomElement = Math.floor(Math.random() * numbers.length);
     const randomNumber = numbers[randomElement];
@@ -130,7 +130,6 @@ function generateRandomNumber() {
         addExclusion(randomNumber, document.getElementById(randomNumber));
       }
       generateButton.disabled = false;
-      displayRandomKitten();
     }
   }, 100);
 }
@@ -155,11 +154,35 @@ function displayRandomKitten() {
     'https://lukypocats.imgix.net/Img/cat15.jpg',
     'https://lukypocats.imgix.net/Img/cat16.jpg',
     'https://lukypocats.imgix.net/Img/cat17.jpg',
-    
     'Img/cat18.gif',
     //tmp pahts
-    'Img/cat19.jpg',
-    'Img/cat20.jpg',
+    'https://lukypocats.imgix.net/Img/cat19.jpg',
+    'https://lukypocats.imgix.net/Img/cat20.jpg',
+    'https://lukypocats.imgix.net/Img/cat21.jpg',
+    'https://lukypocats.imgix.net/Img/cat22.jpg',
+    'https://lukypocats.imgix.net/Img/cat23.jpg',
+    'https://lukypocats.imgix.net/Img/cat24.jpg',
+    'https://lukypocats.imgix.net/Img/cat25.jpg',
+    'https://lukypocats.imgix.net/Img/cat26.jpg',
+    'https://lukypocats.imgix.net/Img/cat27.jpg',
+    'https://lukypocats.imgix.net/Img/cat28.jpg',
+    'https://lukypocats.imgix.net/Img/cat29.jpg',
+    'https://lukypocats.imgix.net/Img/cat30.jpg',
+    'https://lukypocats.imgix.net/Img/cat31.jpg',
+    'Img/cat32.gif',
+    'Img/cat33.gif',
+    'Img/cat34.gif',
+    'Img/cat35.gif',
+    'Img/cat36.gif',
+    'Img/cat37.gif',
+    'Img/cat38.gif',
+    'https://lukypocats.imgix.net/Img/cat39.jpg',
+    'https://lukypocats.imgix.net/Img/cat40.jpg',
+    'https://lukypocats.imgix.net/Img/cat41.jpg',
+    'https://lukypocats.imgix.net/Img/cat42.jpg',
+    'https://lukypocats.imgix.net/Img/cat43.jpg',
+    'https://lukypocats.imgix.net/Img/cat44.jpg',
+    'https://lukypocats.imgix.net/Img/cat45.jpg',
   ];
 
   const leftKitten = kittenImages[Math.floor(Math.random() * kittenImages.length)];

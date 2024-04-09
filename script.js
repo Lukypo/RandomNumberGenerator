@@ -183,6 +183,10 @@ function displayRandomKitten() {
     'https://lukypocats.imgix.net/Img/cat43.jpg',
     'https://lukypocats.imgix.net/Img/cat44.jpg',
     'https://lukypocats.imgix.net/Img/cat45.jpg',
+    'https://lukypocats.imgix.net/Img/cat46.jpg',
+    'https://lukypocats.imgix.net/Img/cat47.jpg',
+    'https://lukypocats.imgix.net/Img/cat48.jpg',
+    'https://lukypocats.imgix.net/Img/cat49.jpg',
   ];
 
   const leftKitten = kittenImages[Math.floor(Math.random() * kittenImages.length)];
